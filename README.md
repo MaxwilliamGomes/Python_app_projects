@@ -1,4 +1,6 @@
 # Tip-Calculator
-The idea here is to create a shared payments calculator.  
-You know that moment when we're at a table with friends and we have to pay the bill, but you only ordered a can of coke?  
-That's right, this calculator will help you pay only for what you consumed with the percentage of the tip referring to what you consumed.
+A ideia aqui é criar uma calculadora de pagamentos compartilhada.
+
+Sabe aquele momento em que estamos numa mesa com os amigos e temos que pagar a conta, mas você só pediu uma lata de Coca-Cola?
+
+Isso mesmo, essa calculadora vai te ajudar a pagar apenas pelo que consumiu com o percentual da gorjeta referente ao que consumiu.
