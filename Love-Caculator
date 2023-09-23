@@ -1,0 +1,36 @@
+Love-Caculator
+
+Este é um programa que testa a compatibilidade entre duas pessoas.
+
+Para calcular a pontuação do amor entre duas pessoas:
+
+Pegue os nomes de ambas as pessoas e verifiquei o número de vezes que as letras da palavra TRUE ocorrem.
+
+Em seguida, verifiquei o número de vezes que as letras da palavra LOVE ocorrem.
+
+Em seguida, combinei esses números para formar um número de 2 dígitos.
+
+Para pontuações de amor inferiores a 10 ou superiores a 90 , a mensagem deve ser: "Seu Score é {score}, vocês combinam como Coca-Cola e Mentos"
+
+Para pontuações de amor entre 40 e 50 , a mensagem deve ser: Seu Score é {score}, vocês estão bem juntos."
+
+Caso contrário, a mensagem será apenas a pontuação deles. por exemplo: Seu Score é {score}, assim... é apenas um jogo,talvez eu esteja errado... "
+
+Code:
+print("Bem-vindo à Calculadora do Amor!")
+name1 = input("Qual o seu nome? \n")
+name2 = input("Qual é o nome do conjungue? \n")
+
+
+
+true = name1.lower().count("t") + name1.lower().count("r") + name1.lower().count("u") + name1.lower().count("e") + name2.lower().count("t") + name2.lower().count("r") + name2.lower().count("u") + name2.lower().count("e")
+love = name1.lower().count("l") + name1.lower().count("o") + name1.lower().count("v") + name1.lower().count("e") + name2.lower().count("l") + name2.lower().count("o") + name2.lower().count("v") + name2.lower().count("e")
+
+score = str(true) + str(love)
+
+if int(score) < 10 or int(score) > 90: 
+    print(F"Seu Score é {score}, vocês combinam como filme e pipoca.")
+elif int(score) >=40 and int(score) <=50 :
+    print(F"Seu Score é {score}, vocês estão bem juntos.")
+else:
+    print(F"Seu Score é {score}, assim... é apenas um jogo,talvez eu esteja errado... ")
