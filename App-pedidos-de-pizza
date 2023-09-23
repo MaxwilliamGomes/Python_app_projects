@@ -1,0 +1,76 @@
+App-pedidos-de-pizza
+A ideia é construir um programa automático de pedido de pizza.
+
+Com base no pedido de um usuário, calcule a fatura final.
+
+Pizza pequena: $ 15
+
+Pizza média: $ 20
+
+Pizza Grande: $ 25
+
+Pepperoni para Pizza Pequena: +$2
+
+Pepperoni para Pizza Média ou Grande: +$3
+
+Queijo extra para qualquer tamanho de pizza: +$1
+
+
+Code:
+
+
+print("Bem-vindo ao Python Pizza Entregas!")
+size = input("Qual tamanho da pizza você quer? S, M, or L ")
+add_pepperoni = input("Você quer pepperoni? Y or N ")
+extra_cheese = input("Você quer queijo extra? Y or N ")
+
+bill = 0
+
+if size == "S":
+  bill = 15
+  if add_pepperoni == "Y":
+    bill += 2
+    if extra_cheese == "Y":
+     bill += 1 
+     print("Sua conta final é: $18.")
+    else:
+        print("Sua conta final é: $17.") 
+  else:
+    bill = 15
+    if extra_cheese == "Y":
+     bill += 1
+     print("Sua conta final é: $16.")
+    else:
+     print("Sua conta final é: $15.")  
+elif size == "M":
+  bill = 20
+  if add_pepperoni == "Y":
+    bill += 3
+    if extra_cheese == "Y":
+     bill += 1 
+     print("Sua conta final é: $24")
+    else:
+        print("Sua conta final é: $23.") 
+  else:
+    bill = 20
+    if extra_cheese == "Y":
+     bill += 1
+     print("Sua conta final é: $21")
+    else:
+     print("Sua conta final é: $20.")
+else:
+  bill = 25
+  if add_pepperoni == "Y":
+    bill += 3
+    if extra_cheese == "Y":
+     bill += 1 
+     print("Sua conta final é: $29")
+    else:
+        print("Sua conta final é: $28.") 
+  else:
+    bill = 25
+    if extra_cheese == "Y":
+     bill += 1
+     print("Sua conta final é: $26")
+    else:
+     print("Sua conta final é: $25.")      
